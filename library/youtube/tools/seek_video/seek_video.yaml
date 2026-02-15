@@ -1,0 +1,32 @@
+integration: chrome
+selector:
+  computer:
+    activeApplication:
+      processName:
+        # Windows
+        - brave.exe
+        - chrome.exe
+        # MacOs
+        - Brave Browser
+        - Google Chrome
+        # Linux
+        - brave
+        - chrome
+  integration:
+    chrome:
+      activeTab:
+        host: www.youtube.com
+type: function
+function:
+  name: seek_video
+  description: Seek forward/backward the video by the specified number of seconds.
+  parameters:
+    type: object
+    properties:
+      seconds:
+        type: integer
+        description: The number of seconds to seek to. Positive values seek forward, negative values seek backward. Use a large negative value to seek to the beginning of the video.
+    required:
+      - seconds
+  exec:
+    language: javascript
