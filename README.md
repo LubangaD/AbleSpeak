@@ -1,4 +1,4 @@
-<img src='.github/media/logo-horizontal-text.svg' width='275'>
+<img src='.github/media/logo.png' width='275'>
 
 [![Version](https://img.shields.io/github/v/release/voqal/voqal?include_prereleases)](https://github.com/voqal/voqal/releases)
 [![Downloads](https://img.shields.io/github/downloads/voqal/voqal/total)](https://github.com/voqal/voqal/releases)
